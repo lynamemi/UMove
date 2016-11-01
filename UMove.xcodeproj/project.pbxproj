@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A85076F91DC8F3FC006A8096 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A85076F81DC8F3FC006A8096 /* SWRevealViewController.m */; };
+		A85076FB1DC8F86E006A8096 /* MenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A85076FA1DC8F86E006A8096 /* MenuTableViewController.swift */; };
+		A855BA281DC55CE40045A2D5 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A855BA271DC55CE40045A2D5 /* CloudKit.framework */; };
 		A859459A1DC5307400797F5F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A85945991DC5307400797F5F /* AppDelegate.swift */; };
 		A859459C1DC5307400797F5F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A859459B1DC5307400797F5F /* ViewController.swift */; };
 		A859459F1DC5307400797F5F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A859459D1DC5307400797F5F /* Main.storyboard */; };
@@ -35,6 +38,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A85076F61DC8F3FB006A8096 /* UMove-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UMove-Bridging-Header.h"; sourceTree = "<group>"; };
+		A85076F71DC8F3FC006A8096 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
+		A85076F81DC8F3FC006A8096 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
+		A85076FA1DC8F86E006A8096 /* MenuTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MenuTableViewController.swift; path = ../MenuTableViewController.swift; sourceTree = "<group>"; };
+		A855BA271DC55CE40045A2D5 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 		A85945961DC5307400797F5F /* UMove.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UMove.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A85945991DC5307400797F5F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A859459B1DC5307400797F5F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -49,6 +57,7 @@
 		A85945B81DC5307500797F5F /* UMoveUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UMoveUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A85945BC1DC5307500797F5F /* UMoveUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UMoveUITests.swift; sourceTree = "<group>"; };
 		A85945BE1DC5307500797F5F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A85945CA1DC5308000797F5F /* UMove.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = UMove.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A855BA281DC55CE40045A2D5 /* CloudKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +93,7 @@
 				A85945B01DC5307500797F5F /* UMoveTests */,
 				A85945BB1DC5307500797F5F /* UMoveUITests */,
 				A85945971DC5307400797F5F /* Products */,
+				A8E843F51DC5375100E044D7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,13 +110,18 @@
 		A85945981DC5307400797F5F /* UMove */ = {
 			isa = PBXGroup;
 			children = (
+				A85945CA1DC5308000797F5F /* UMove.entitlements */,
 				A85945991DC5307400797F5F /* AppDelegate.swift */,
 				A859459B1DC5307400797F5F /* ViewController.swift */,
+				A85076FA1DC8F86E006A8096 /* MenuTableViewController.swift */,
 				A859459D1DC5307400797F5F /* Main.storyboard */,
 				A85945A31DC5307400797F5F /* Assets.xcassets */,
+				A85076F71DC8F3FC006A8096 /* SWRevealViewController.h */,
+				A85076F81DC8F3FC006A8096 /* SWRevealViewController.m */,
 				A85945A51DC5307400797F5F /* LaunchScreen.storyboard */,
 				A85945A81DC5307400797F5F /* Info.plist */,
 				A85945A01DC5307400797F5F /* UMove.xcdatamodeld */,
+				A85076F61DC8F3FB006A8096 /* UMove-Bridging-Header.h */,
 			);
 			path = UMove;
 			sourceTree = "<group>";
@@ -126,6 +142,14 @@
 				A85945BE1DC5307500797F5F /* Info.plist */,
 			);
 			path = UMoveUITests;
+			sourceTree = "<group>";
+		};
+		A8E843F51DC5375100E044D7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A855BA271DC55CE40045A2D5 /* CloudKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -191,13 +215,22 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0800;
-				LastUpgradeCheck = 0800;
+				LastUpgradeCheck = 0810;
 				ORGANIZATIONNAME = "University of Montana";
 				TargetAttributes = {
 					A85945951DC5307400797F5F = {
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = H2B8EC8PTB;
+						LastSwiftMigration = 0810;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+							com.apple.iCloud = {
+								enabled = 1;
+							};
+						};
 					};
 					A85945AC1DC5307500797F5F = {
 						CreatedOnToolsVersion = 8.0;
@@ -267,7 +300,9 @@
 			files = (
 				A85945A21DC5307400797F5F /* UMove.xcdatamodeld in Sources */,
 				A859459C1DC5307400797F5F /* ViewController.swift in Sources */,
+				A85076FB1DC8F86E006A8096 /* MenuTableViewController.swift in Sources */,
 				A859459A1DC5307400797F5F /* AppDelegate.swift in Sources */,
+				A85076F91DC8F3FC006A8096 /* SWRevealViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -340,12 +375,15 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = H2B8EC8PTB;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -365,6 +403,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "";
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -390,12 +429,15 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = H2B8EC8PTB;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -408,6 +450,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				PROVISIONING_PROFILE = "";
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -419,11 +462,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = UMove/UMove.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = H2B8EC8PTB;
 				INFOPLIST_FILE = UMove/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.uofm.UMove;
+				PRODUCT_BUNDLE_IDENTIFIER = com.universityofmontana.umove;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "30e8bfdc-f88c-47e4-b9d1-8397db3d646e";
+				SWIFT_OBJC_BRIDGING_HEADER = "UMove/UMove-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -432,11 +482,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = UMove/UMove.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = H2B8EC8PTB;
 				INFOPLIST_FILE = UMove/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.uofm.UMove;
+				PRODUCT_BUNDLE_IDENTIFIER = com.universityofmontana.umove;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "30e8bfdc-f88c-47e4-b9d1-8397db3d646e";
+				SWIFT_OBJC_BRIDGING_HEADER = "UMove/UMove-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -518,6 +574,7 @@
 				A85945C31DC5307500797F5F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A85945C41DC5307500797F5F /* Build configuration list for PBXNativeTarget "UMoveTests" */ = {
 			isa = XCConfigurationList;
@@ -526,6 +583,7 @@
 				A85945C61DC5307500797F5F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A85945C71DC5307500797F5F /* Build configuration list for PBXNativeTarget "UMoveUITests" */ = {
 			isa = XCConfigurationList;
@@ -534,6 +592,7 @@
 				A85945C91DC5307500797F5F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

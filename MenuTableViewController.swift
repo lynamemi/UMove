@@ -20,7 +20,7 @@ class MenuTableViewController: UITableViewController {
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
-        menuItems = ["History", "Instructions", "Profile"]
+        menuItems = ["History", "Instructions", "Profile", "Fitness Test", "Results"]
     }
 
     override func didReceiveMemoryWarning() {
@@ -46,6 +46,15 @@ class MenuTableViewController: UITableViewController {
         cell.textLabel?.text = menuItems[indexPath.row]
 
         return cell
+    }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if menuItems[indexPath.row] == "Fitness Test" {
+            performSegue(withIdentifier:"Test", sender: self)
+        }
+        if menuItems[indexPath.row] == "Results" {
+            performSegue(withIdentifier:"Results", sender: self)
+        }
     }
 
     /*

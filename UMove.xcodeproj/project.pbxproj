@@ -10,14 +10,21 @@
 		A85076F91DC8F3FC006A8096 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A85076F81DC8F3FC006A8096 /* SWRevealViewController.m */; };
 		A85076FB1DC8F86E006A8096 /* MenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A85076FA1DC8F86E006A8096 /* MenuTableViewController.swift */; };
 		A855BA281DC55CE40045A2D5 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A855BA271DC55CE40045A2D5 /* CloudKit.framework */; };
+		A8571F131DEFA7EB0019F7A3 /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8571F121DEFA7EB0019F7A3 /* TestViewController.swift */; };
 		A859459A1DC5307400797F5F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A85945991DC5307400797F5F /* AppDelegate.swift */; };
-		A859459C1DC5307400797F5F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A859459B1DC5307400797F5F /* ViewController.swift */; };
+		A859459C1DC5307400797F5F /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A859459B1DC5307400797F5F /* HomeViewController.swift */; };
 		A859459F1DC5307400797F5F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A859459D1DC5307400797F5F /* Main.storyboard */; };
 		A85945A21DC5307400797F5F /* UMove.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A85945A01DC5307400797F5F /* UMove.xcdatamodeld */; };
 		A85945A41DC5307400797F5F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A85945A31DC5307400797F5F /* Assets.xcassets */; };
 		A85945A71DC5307400797F5F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A85945A51DC5307400797F5F /* LaunchScreen.storyboard */; };
 		A85945B21DC5307500797F5F /* UMoveTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A85945B11DC5307500797F5F /* UMoveTests.swift */; };
 		A85945BD1DC5307500797F5F /* UMoveUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A85945BC1DC5307500797F5F /* UMoveUITests.swift */; };
+		A869D55F1DF0A2F300443E45 /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A869D55E1DF0A2F300443E45 /* StartViewController.swift */; };
+		A869D5611DF0B16300443E45 /* PostHRViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A869D5601DF0B16300443E45 /* PostHRViewController.swift */; };
+		A869D5631DF0BEF600443E45 /* RestingHRViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A869D5621DF0BEF600443E45 /* RestingHRViewController.swift */; };
+		A869D5651DF0C50C00443E45 /* RPEViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A869D5641DF0C50C00443E45 /* RPEViewController.swift */; };
+		A869D5671DF0C79000443E45 /* ResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A869D5661DF0C79000443E45 /* ResultsViewController.swift */; };
+		A869D5691DF0CA0100443E45 /* DistanceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A869D5681DF0CA0100443E45 /* DistanceViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,9 +50,10 @@
 		A85076F81DC8F3FC006A8096 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
 		A85076FA1DC8F86E006A8096 /* MenuTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MenuTableViewController.swift; path = ../MenuTableViewController.swift; sourceTree = "<group>"; };
 		A855BA271DC55CE40045A2D5 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
+		A8571F121DEFA7EB0019F7A3 /* TestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
 		A85945961DC5307400797F5F /* UMove.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UMove.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A85945991DC5307400797F5F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A859459B1DC5307400797F5F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A859459B1DC5307400797F5F /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		A859459E1DC5307400797F5F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A85945A11DC5307400797F5F /* UMove.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = UMove.xcdatamodel; sourceTree = "<group>"; };
 		A85945A31DC5307400797F5F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -58,6 +66,12 @@
 		A85945BC1DC5307500797F5F /* UMoveUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UMoveUITests.swift; sourceTree = "<group>"; };
 		A85945BE1DC5307500797F5F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A85945CA1DC5308000797F5F /* UMove.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = UMove.entitlements; sourceTree = "<group>"; };
+		A869D55E1DF0A2F300443E45 /* StartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
+		A869D5601DF0B16300443E45 /* PostHRViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostHRViewController.swift; sourceTree = "<group>"; };
+		A869D5621DF0BEF600443E45 /* RestingHRViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestingHRViewController.swift; sourceTree = "<group>"; };
+		A869D5641DF0C50C00443E45 /* RPEViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RPEViewController.swift; path = ../RPEViewController.swift; sourceTree = "<group>"; };
+		A869D5661DF0C79000443E45 /* ResultsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ResultsViewController.swift; path = ../ResultsViewController.swift; sourceTree = "<group>"; };
+		A869D5681DF0CA0100443E45 /* DistanceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DistanceViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,9 +126,16 @@
 			children = (
 				A85945CA1DC5308000797F5F /* UMove.entitlements */,
 				A85945991DC5307400797F5F /* AppDelegate.swift */,
-				A859459B1DC5307400797F5F /* ViewController.swift */,
+				A859459B1DC5307400797F5F /* HomeViewController.swift */,
 				A85076FA1DC8F86E006A8096 /* MenuTableViewController.swift */,
 				A859459D1DC5307400797F5F /* Main.storyboard */,
+				A869D5681DF0CA0100443E45 /* DistanceViewController.swift */,
+				A869D5661DF0C79000443E45 /* ResultsViewController.swift */,
+				A869D5621DF0BEF600443E45 /* RestingHRViewController.swift */,
+				A869D5601DF0B16300443E45 /* PostHRViewController.swift */,
+				A869D55E1DF0A2F300443E45 /* StartViewController.swift */,
+				A869D5641DF0C50C00443E45 /* RPEViewController.swift */,
+				A8571F121DEFA7EB0019F7A3 /* TestViewController.swift */,
 				A85945A31DC5307400797F5F /* Assets.xcassets */,
 				A85076F71DC8F3FC006A8096 /* SWRevealViewController.h */,
 				A85076F81DC8F3FC006A8096 /* SWRevealViewController.m */,
@@ -298,10 +319,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A869D5671DF0C79000443E45 /* ResultsViewController.swift in Sources */,
 				A85945A21DC5307400797F5F /* UMove.xcdatamodeld in Sources */,
-				A859459C1DC5307400797F5F /* ViewController.swift in Sources */,
+				A869D55F1DF0A2F300443E45 /* StartViewController.swift in Sources */,
+				A869D5651DF0C50C00443E45 /* RPEViewController.swift in Sources */,
+				A869D5631DF0BEF600443E45 /* RestingHRViewController.swift in Sources */,
+				A869D5691DF0CA0100443E45 /* DistanceViewController.swift in Sources */,
+				A859459C1DC5307400797F5F /* HomeViewController.swift in Sources */,
 				A85076FB1DC8F86E006A8096 /* MenuTableViewController.swift in Sources */,
+				A869D5611DF0B16300443E45 /* PostHRViewController.swift in Sources */,
 				A859459A1DC5307400797F5F /* AppDelegate.swift in Sources */,
+				A8571F131DEFA7EB0019F7A3 /* TestViewController.swift in Sources */,
 				A85076F91DC8F3FC006A8096 /* SWRevealViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

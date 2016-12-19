@@ -10,8 +10,15 @@ import UIKit
 
 class RestingHRViewController: UIViewController {
     
+    var restingHR = String()
+    
+    @IBOutlet weak var restingHRTextField: UITextField!
+    
+    @IBAction func textFieldPrimaryActionTriggered(_ sender: Any) {
+        textFieldSubmissionTriggered()
+    }
     @IBAction func submitHeartRateButtonPressed(_ sender: UIButton) {
-        performSegue(withIdentifier: "Start", sender: self)
+        textFieldSubmissionTriggered()
     }
 
     override func viewDidLoad() {
@@ -25,15 +32,17 @@ class RestingHRViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    func textFieldSubmissionTriggered() {
+        restingHR = restingHRTextField.text!
+        performSegue(withIdentifier: "Start", sender: self)
+    }
 
-    /*
     // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
+        let destination = segue.destination as! StartViewController
+        destination.restingHR = restingHR
     }
-    */
 
 }

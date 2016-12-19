@@ -15,14 +15,23 @@ class HomeViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-        
-        // FOR SWREVEAL MENU:
+//        printFonts()
+        // FOR SWREVEAL MENU:s
         openMenuButton.target = self.revealViewController()
         openMenuButton.action = #selector(SWRevealViewController.revealToggle(_:))
         self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
     }
 
+    // run this function on viewdidload to determine the exact names of fonts to use
+    func printFonts() {
+        let fontFamilyNames = UIFont.familyNames
+        for familyName in fontFamilyNames {
+            print("------------------------------")
+            print("Font Family Name = [\(familyName)]")
+            let names = UIFont.fontNames(forFamilyName: familyName)
+            print("Font Names = [\(names)]")
+        }
+    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

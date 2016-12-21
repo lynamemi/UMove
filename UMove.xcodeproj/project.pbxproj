@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3F01EC9A6DE05EFB411D9A50 /* Pods_UMoveTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A3E0BAE097B408A7F024F2D /* Pods_UMoveTests.framework */; };
+		8C68911295E401BDF0F24DB7 /* Pods_UMoveUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82A6D65153D152F9848B1C8A /* Pods_UMoveUITests.framework */; };
 		A8176B801DF8C1D9000BD288 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8176B7F1DF8C1D9000BD288 /* LoginViewController.swift */; };
 		A81DF5BB1DF8C90F0077778C /* OpenSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A81DF5B11DF8C90F0077778C /* OpenSans-Bold.ttf */; };
 		A81DF5BC1DF8C90F0077778C /* OpenSans-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A81DF5B21DF8C90F0077778C /* OpenSans-BoldItalic.ttf */; };
@@ -36,6 +38,12 @@
 		A869D5651DF0C50C00443E45 /* RPEViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A869D5641DF0C50C00443E45 /* RPEViewController.swift */; };
 		A869D5671DF0C79000443E45 /* ResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A869D5661DF0C79000443E45 /* ResultsViewController.swift */; };
 		A869D5691DF0CA0100443E45 /* DistanceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A869D5681DF0CA0100443E45 /* DistanceViewController.swift */; };
+		A8DA01791E0A3D0000EC7967 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8DA01781E0A3D0000EC7967 /* ProfileViewController.swift */; };
+		A8DA017B1E0A3E0600EC7967 /* InstructionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8DA017A1E0A3E0600EC7967 /* InstructionsViewController.swift */; };
+		A8DA017D1E0A405000EC7967 /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8DA017C1E0A405000EC7967 /* HistoryViewController.swift */; };
+		A8DA017F1E0A43F200EC7967 /* originalPaper.pdf in Resources */ = {isa = PBXBuildFile; fileRef = A8DA017E1E0A43F200EC7967 /* originalPaper.pdf */; };
+		A8DA01811E0A474C00EC7967 /* OriginalPaperViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8DA01801E0A474C00EC7967 /* OriginalPaperViewController.swift */; };
+		FBE895428B40350FC2B19F19 /* Pods_UMove.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86A5283AFF459F89C374E7CC /* Pods_UMove.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +64,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		30F7AB95282E380362C98A9D /* Pods-UMoveTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UMoveTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-UMoveTests/Pods-UMoveTests.release.xcconfig"; sourceTree = "<group>"; };
+		3A3E0BAE097B408A7F024F2D /* Pods_UMoveTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UMoveTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3A7E20775324E4E3CEA3A247 /* Pods-UMoveTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UMoveTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-UMoveTests/Pods-UMoveTests.debug.xcconfig"; sourceTree = "<group>"; };
+		82A6D65153D152F9848B1C8A /* Pods_UMoveUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UMoveUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		86A5283AFF459F89C374E7CC /* Pods_UMove.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UMove.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8176B7F1DF8C1D9000BD288 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		A81DF5B11DF8C90F0077778C /* OpenSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "OpenSans-Bold.ttf"; path = "Open_Sans/OpenSans-Bold.ttf"; sourceTree = "<group>"; };
 		A81DF5B21DF8C90F0077778C /* OpenSans-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "OpenSans-BoldItalic.ttf"; path = "Open_Sans/OpenSans-BoldItalic.ttf"; sourceTree = "<group>"; };
@@ -94,6 +107,15 @@
 		A869D5641DF0C50C00443E45 /* RPEViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RPEViewController.swift; path = ../RPEViewController.swift; sourceTree = "<group>"; };
 		A869D5661DF0C79000443E45 /* ResultsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ResultsViewController.swift; path = ../ResultsViewController.swift; sourceTree = "<group>"; };
 		A869D5681DF0CA0100443E45 /* DistanceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DistanceViewController.swift; sourceTree = "<group>"; };
+		A8DA01781E0A3D0000EC7967 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		A8DA017A1E0A3E0600EC7967 /* InstructionsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InstructionsViewController.swift; sourceTree = "<group>"; };
+		A8DA017C1E0A405000EC7967 /* HistoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
+		A8DA017E1E0A43F200EC7967 /* originalPaper.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = originalPaper.pdf; sourceTree = "<group>"; };
+		A8DA01801E0A474C00EC7967 /* OriginalPaperViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OriginalPaperViewController.swift; sourceTree = "<group>"; };
+		B0764BFEABCDDDFEDB80C561 /* Pods-UMoveUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UMoveUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-UMoveUITests/Pods-UMoveUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		B0BBEE68929C0C0E4D64B385 /* Pods-UMoveUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UMoveUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-UMoveUITests/Pods-UMoveUITests.release.xcconfig"; sourceTree = "<group>"; };
+		B23DD1448A647AB9DA07F13A /* Pods-UMove.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UMove.release.xcconfig"; path = "Pods/Target Support Files/Pods-UMove/Pods-UMove.release.xcconfig"; sourceTree = "<group>"; };
+		D68D4163B42E0F80D57D1299 /* Pods-UMove.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UMove.debug.xcconfig"; path = "Pods/Target Support Files/Pods-UMove/Pods-UMove.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +124,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A855BA281DC55CE40045A2D5 /* CloudKit.framework in Frameworks */,
+				FBE895428B40350FC2B19F19 /* Pods_UMove.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -109,6 +132,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F01EC9A6DE05EFB411D9A50 /* Pods_UMoveTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -116,6 +140,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8C68911295E401BDF0F24DB7 /* Pods_UMoveUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -147,6 +172,7 @@
 				A85945BB1DC5307500797F5F /* UMoveUITests */,
 				A85945971DC5307400797F5F /* Products */,
 				A8E843F51DC5375100E044D7 /* Frameworks */,
+				DE8D748835E706C8222B647F /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -167,9 +193,14 @@
 				A85945CA1DC5308000797F5F /* UMove.entitlements */,
 				A85945991DC5307400797F5F /* AppDelegate.swift */,
 				A859459D1DC5307400797F5F /* Main.storyboard */,
+				A8DA017E1E0A43F200EC7967 /* originalPaper.pdf */,
 				A8176B7F1DF8C1D9000BD288 /* LoginViewController.swift */,
 				A859459B1DC5307400797F5F /* HomeViewController.swift */,
 				A85076FA1DC8F86E006A8096 /* MenuTableViewController.swift */,
+				A8DA017C1E0A405000EC7967 /* HistoryViewController.swift */,
+				A8DA01801E0A474C00EC7967 /* OriginalPaperViewController.swift */,
+				A8DA017A1E0A3E0600EC7967 /* InstructionsViewController.swift */,
+				A8DA01781E0A3D0000EC7967 /* ProfileViewController.swift */,
 				A8571F121DEFA7EB0019F7A3 /* TestViewController.swift */,
 				A869D5661DF0C79000443E45 /* ResultsViewController.swift */,
 				A869D5621DF0BEF600443E45 /* RestingHRViewController.swift */,
@@ -210,8 +241,24 @@
 			isa = PBXGroup;
 			children = (
 				A855BA271DC55CE40045A2D5 /* CloudKit.framework */,
+				86A5283AFF459F89C374E7CC /* Pods_UMove.framework */,
+				3A3E0BAE097B408A7F024F2D /* Pods_UMoveTests.framework */,
+				82A6D65153D152F9848B1C8A /* Pods_UMoveUITests.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DE8D748835E706C8222B647F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D68D4163B42E0F80D57D1299 /* Pods-UMove.debug.xcconfig */,
+				B23DD1448A647AB9DA07F13A /* Pods-UMove.release.xcconfig */,
+				3A7E20775324E4E3CEA3A247 /* Pods-UMoveTests.debug.xcconfig */,
+				30F7AB95282E380362C98A9D /* Pods-UMoveTests.release.xcconfig */,
+				B0764BFEABCDDDFEDB80C561 /* Pods-UMoveUITests.debug.xcconfig */,
+				B0BBEE68929C0C0E4D64B385 /* Pods-UMoveUITests.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -221,9 +268,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A85945C11DC5307500797F5F /* Build configuration list for PBXNativeTarget "UMove" */;
 			buildPhases = (
+				CE605BB39134EB464759F02E /* [CP] Check Pods Manifest.lock */,
 				A85945921DC5307400797F5F /* Sources */,
 				A85945931DC5307400797F5F /* Frameworks */,
 				A85945941DC5307400797F5F /* Resources */,
+				46427D43BEA7728AD5BBDE3B /* [CP] Embed Pods Frameworks */,
+				714A28F07B1813331CED14CC /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -238,9 +288,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A85945C41DC5307500797F5F /* Build configuration list for PBXNativeTarget "UMoveTests" */;
 			buildPhases = (
+				5903BDE761B2BE739DBCF074 /* [CP] Check Pods Manifest.lock */,
 				A85945A91DC5307500797F5F /* Sources */,
 				A85945AA1DC5307500797F5F /* Frameworks */,
 				A85945AB1DC5307500797F5F /* Resources */,
+				DF7E8784DFAF2A02493970C0 /* [CP] Embed Pods Frameworks */,
+				A9E2E24A73AA46C505348E15 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -256,9 +309,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A85945C71DC5307500797F5F /* Build configuration list for PBXNativeTarget "UMoveUITests" */;
 			buildPhases = (
+				2A8D997D53AB2BB056A5C62F /* [CP] Check Pods Manifest.lock */,
 				A85945B41DC5307500797F5F /* Sources */,
 				A85945B51DC5307500797F5F /* Frameworks */,
 				A85945B61DC5307500797F5F /* Resources */,
+				76D7F7C7D6079760347165E3 /* [CP] Embed Pods Frameworks */,
+				E20D80E0C364769A20847BE3 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -334,6 +390,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A81DF5BF1DF8C90F0077778C /* OpenSans-Italic.ttf in Resources */,
+				A8DA017F1E0A43F200EC7967 /* originalPaper.pdf in Resources */,
 				A81DF5BC1DF8C90F0077778C /* OpenSans-BoldItalic.ttf in Resources */,
 				A85945A71DC5307400797F5F /* LaunchScreen.storyboard in Resources */,
 				A81DF5C31DF8C90F0077778C /* OpenSans-Semibold.ttf in Resources */,
@@ -365,6 +422,144 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2A8D997D53AB2BB056A5C62F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		46427D43BEA7728AD5BBDE3B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-UMove/Pods-UMove-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5903BDE761B2BE739DBCF074 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		714A28F07B1813331CED14CC /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-UMove/Pods-UMove-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		76D7F7C7D6079760347165E3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-UMoveUITests/Pods-UMoveUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A9E2E24A73AA46C505348E15 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-UMoveTests/Pods-UMoveTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CE605BB39134EB464759F02E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		DF7E8784DFAF2A02493970C0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-UMoveTests/Pods-UMoveTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E20D80E0C364769A20847BE3 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-UMoveUITests/Pods-UMoveUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		A85945921DC5307400797F5F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -374,12 +569,16 @@
 				A85945A21DC5307400797F5F /* UMove.xcdatamodeld in Sources */,
 				A869D55F1DF0A2F300443E45 /* StartViewController.swift in Sources */,
 				A869D5651DF0C50C00443E45 /* RPEViewController.swift in Sources */,
+				A8DA01791E0A3D0000EC7967 /* ProfileViewController.swift in Sources */,
 				A869D5631DF0BEF600443E45 /* RestingHRViewController.swift in Sources */,
 				A869D5691DF0CA0100443E45 /* DistanceViewController.swift in Sources */,
+				A8DA017D1E0A405000EC7967 /* HistoryViewController.swift in Sources */,
 				A859459C1DC5307400797F5F /* HomeViewController.swift in Sources */,
 				A85076FB1DC8F86E006A8096 /* MenuTableViewController.swift in Sources */,
+				A8DA017B1E0A3E0600EC7967 /* InstructionsViewController.swift in Sources */,
 				A869D5611DF0B16300443E45 /* PostHRViewController.swift in Sources */,
 				A859459A1DC5307400797F5F /* AppDelegate.swift in Sources */,
+				A8DA01811E0A474C00EC7967 /* OriginalPaperViewController.swift in Sources */,
 				A8571F131DEFA7EB0019F7A3 /* TestViewController.swift in Sources */,
 				A8176B801DF8C1D9000BD288 /* LoginViewController.swift in Sources */,
 				A85076F91DC8F3FC006A8096 /* SWRevealViewController.m in Sources */,
@@ -540,6 +739,7 @@
 		};
 		A85945C21DC5307500797F5F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D68D4163B42E0F80D57D1299 /* Pods-UMove.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -560,6 +760,7 @@
 		};
 		A85945C31DC5307500797F5F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B23DD1448A647AB9DA07F13A /* Pods-UMove.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -579,6 +780,7 @@
 		};
 		A85945C51DC5307500797F5F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3A7E20775324E4E3CEA3A247 /* Pods-UMoveTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -594,6 +796,7 @@
 		};
 		A85945C61DC5307500797F5F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 30F7AB95282E380362C98A9D /* Pods-UMoveTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -609,6 +812,7 @@
 		};
 		A85945C81DC5307500797F5F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B0764BFEABCDDDFEDB80C561 /* Pods-UMoveUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = H2B8EC8PTB;
@@ -623,6 +827,7 @@
 		};
 		A85945C91DC5307500797F5F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B0BBEE68929C0C0E4D64B385 /* Pods-UMoveUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = H2B8EC8PTB;

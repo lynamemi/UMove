@@ -10,13 +10,15 @@ import UIKit; import AVFoundation
 
 class StartViewController: UIViewController {
     
-    var audioPlayer = AVAudioPlayer()
+    var metronome = AVAudioPlayer()
     var timer = Timer()
     var timerCount = 5
     var restingHR = String()
     var timerIsInTestMode = true
     let flashingColor = UIColor(red: 0/255, green: 102/255, blue: 102/255, alpha: 1.0)
     
+    @IBOutlet weak var secondSubView: UIView!
+    @IBOutlet weak var firstSubView: UIView!
     @IBOutlet weak var startLabel: UILabel!
     @IBOutlet weak var timerLabel: UILabel!
     @IBOutlet weak var startButton: UIButton!
@@ -52,34 +54,37 @@ class StartViewController: UIViewController {
 
             // CHANGING BACKGROUND COLOR TO THE BEAT OF THE METRONOME
             if timerCount % 2 == 0 {
-                print(flashingColor)
                 self.view.backgroundColor = flashingColor
+                firstSubView.backgroundColor = flashingColor
+                secondSubView.backgroundColor = flashingColor
                 timerLabel.textColor = UIColor.white
                 startLabel.textColor = UIColor.white
             }
             if timerCount % 2 != 0 {
                 self.view.backgroundColor = UIColor.white
+                firstSubView.backgroundColor = UIColor.white
+                secondSubView.backgroundColor = UIColor.white
                 timerLabel.textColor = UIColor.black
                 startLabel.textColor = UIColor.black
             }
-            print(timerCount)
         } else if timerCount == 0 && timerIsInTestMode == true {
             startLabel.text = "GO!"
+            startLabel.font = startLabel.font.withSize(100)
             timerCount = 6
             timerLabel.text = String(timerCount)
             timerIsInTestMode = false
         } else if timerCount == 0 && timerIsInTestMode == false {
             timer.invalidate()
             performSegue(withIdentifier: "PostHR", sender: self)
-            audioPlayer.stop()
+            metronome.stop()
         }
     }
     
     func startMetronome() {
         if let asset = NSDataAsset(name: "080_bpm") {
             do {
-                try audioPlayer = AVAudioPlayer(data: asset.data, fileTypeHint: "mp3")
-                audioPlayer.play()
+                try metronome = AVAudioPlayer(data: asset.data, fileTypeHint: "mp3")
+                metronome.play()
             } catch let error as NSError {
                 print(error.localizedDescription)
             }

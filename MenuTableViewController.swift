@@ -20,7 +20,7 @@ class MenuTableViewController: UITableViewController {
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
-        menuItems = ["History", "Instructions", "Profile", "Fitness Test", "Results"]
+        menuItems = ["History", "Instructions", "Profile", "Fitness Test", "Results", "Log off"]
     }
 
     override func didReceiveMemoryWarning() {
@@ -61,6 +61,18 @@ class MenuTableViewController: UITableViewController {
         }
         if menuItems[indexPath.row] == "Results" {
             performSegue(withIdentifier:"Results", sender: self)
+        }
+        if menuItems[indexPath.row] == "Log off" {
+            performSegue(withIdentifier: "UnwindToLogin", sender: self)
+        }
+        if menuItems[indexPath.row] == "Profile" {
+            performSegue(withIdentifier:"Profile", sender: self)
+        }
+        if menuItems[indexPath.row] == "History" {
+            performSegue(withIdentifier:"History", sender: self)
+        }
+        if menuItems[indexPath.row] == "Instructions" {
+            performSegue(withIdentifier:"Instructions", sender: self)
         }
     }
 

@@ -26,8 +26,9 @@ class PostHRViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        // for keyboard:
         NotificationCenter.default.addObserver(self, selector: #selector(self.keyboardNotification(notification:)), name: NSNotification.Name.UIKeyboardWillChangeFrame, object: nil)
-        // Do any additional setup after loading the view.
     }
 
     override func didReceiveMemoryWarning() {
@@ -74,9 +75,12 @@ class PostHRViewController: UIViewController {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
         print(postHR)
-        let destination = segue.destination as! RPEViewController
-        destination.restingHR = restingHR
-        destination.postHR = postHR
+        if segue.identifier == "RPE" {
+            let destination = segue.destination as! RPEViewController
+            destination.restingHR = restingHR
+            destination.postHR = postHR
+        }
+
     }
 
 }

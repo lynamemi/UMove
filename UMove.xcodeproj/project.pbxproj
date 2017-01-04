@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		3F01EC9A6DE05EFB411D9A50 /* Pods_UMoveTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A3E0BAE097B408A7F024F2D /* Pods_UMoveTests.framework */; };
 		8C68911295E401BDF0F24DB7 /* Pods_UMoveUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82A6D65153D152F9848B1C8A /* Pods_UMoveUITests.framework */; };
+		A8123A1A1E0B215200704D72 /* TakePulseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8123A191E0B215200704D72 /* TakePulseViewController.swift */; };
 		A8176B801DF8C1D9000BD288 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8176B7F1DF8C1D9000BD288 /* LoginViewController.swift */; };
 		A81DF5BB1DF8C90F0077778C /* OpenSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A81DF5B11DF8C90F0077778C /* OpenSans-Bold.ttf */; };
 		A81DF5BC1DF8C90F0077778C /* OpenSans-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A81DF5B21DF8C90F0077778C /* OpenSans-BoldItalic.ttf */; };
@@ -32,12 +33,14 @@
 		A85945A71DC5307400797F5F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A85945A51DC5307400797F5F /* LaunchScreen.storyboard */; };
 		A85945B21DC5307500797F5F /* UMoveTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A85945B11DC5307500797F5F /* UMoveTests.swift */; };
 		A85945BD1DC5307500797F5F /* UMoveUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A85945BC1DC5307500797F5F /* UMoveUITests.swift */; };
+		A86341041E1ADC8800578253 /* PracticeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A86341031E1ADC8800578253 /* PracticeViewController.swift */; };
 		A869D55F1DF0A2F300443E45 /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A869D55E1DF0A2F300443E45 /* StartViewController.swift */; };
 		A869D5611DF0B16300443E45 /* PostHRViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A869D5601DF0B16300443E45 /* PostHRViewController.swift */; };
 		A869D5631DF0BEF600443E45 /* RestingHRViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A869D5621DF0BEF600443E45 /* RestingHRViewController.swift */; };
 		A869D5651DF0C50C00443E45 /* RPEViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A869D5641DF0C50C00443E45 /* RPEViewController.swift */; };
 		A869D5671DF0C79000443E45 /* ResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A869D5661DF0C79000443E45 /* ResultsViewController.swift */; };
 		A869D5691DF0CA0100443E45 /* DistanceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A869D5681DF0CA0100443E45 /* DistanceViewController.swift */; };
+		A8A09A401E1C841800651600 /* GetReadyHRViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8A09A3F1E1C841800651600 /* GetReadyHRViewController.swift */; };
 		A8DA01791E0A3D0000EC7967 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8DA01781E0A3D0000EC7967 /* ProfileViewController.swift */; };
 		A8DA017B1E0A3E0600EC7967 /* InstructionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8DA017A1E0A3E0600EC7967 /* InstructionsViewController.swift */; };
 		A8DA017D1E0A405000EC7967 /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8DA017C1E0A405000EC7967 /* HistoryViewController.swift */; };
@@ -69,6 +72,7 @@
 		3A7E20775324E4E3CEA3A247 /* Pods-UMoveTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UMoveTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-UMoveTests/Pods-UMoveTests.debug.xcconfig"; sourceTree = "<group>"; };
 		82A6D65153D152F9848B1C8A /* Pods_UMoveUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UMoveUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		86A5283AFF459F89C374E7CC /* Pods_UMove.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UMove.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A8123A191E0B215200704D72 /* TakePulseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TakePulseViewController.swift; sourceTree = "<group>"; };
 		A8176B7F1DF8C1D9000BD288 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		A81DF5B11DF8C90F0077778C /* OpenSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "OpenSans-Bold.ttf"; path = "Open_Sans/OpenSans-Bold.ttf"; sourceTree = "<group>"; };
 		A81DF5B21DF8C90F0077778C /* OpenSans-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "OpenSans-BoldItalic.ttf"; path = "Open_Sans/OpenSans-BoldItalic.ttf"; sourceTree = "<group>"; };
@@ -101,12 +105,14 @@
 		A85945BC1DC5307500797F5F /* UMoveUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UMoveUITests.swift; sourceTree = "<group>"; };
 		A85945BE1DC5307500797F5F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A85945CA1DC5308000797F5F /* UMove.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = UMove.entitlements; sourceTree = "<group>"; };
+		A86341031E1ADC8800578253 /* PracticeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PracticeViewController.swift; sourceTree = "<group>"; };
 		A869D55E1DF0A2F300443E45 /* StartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
 		A869D5601DF0B16300443E45 /* PostHRViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostHRViewController.swift; sourceTree = "<group>"; };
 		A869D5621DF0BEF600443E45 /* RestingHRViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestingHRViewController.swift; sourceTree = "<group>"; };
 		A869D5641DF0C50C00443E45 /* RPEViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RPEViewController.swift; path = ../RPEViewController.swift; sourceTree = "<group>"; };
 		A869D5661DF0C79000443E45 /* ResultsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ResultsViewController.swift; path = ../ResultsViewController.swift; sourceTree = "<group>"; };
 		A869D5681DF0CA0100443E45 /* DistanceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DistanceViewController.swift; sourceTree = "<group>"; };
+		A8A09A3F1E1C841800651600 /* GetReadyHRViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetReadyHRViewController.swift; sourceTree = "<group>"; };
 		A8DA01781E0A3D0000EC7967 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		A8DA017A1E0A3E0600EC7967 /* InstructionsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InstructionsViewController.swift; sourceTree = "<group>"; };
 		A8DA017C1E0A405000EC7967 /* HistoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
@@ -201,10 +207,13 @@
 				A8DA01801E0A474C00EC7967 /* OriginalPaperViewController.swift */,
 				A8DA017A1E0A3E0600EC7967 /* InstructionsViewController.swift */,
 				A8DA01781E0A3D0000EC7967 /* ProfileViewController.swift */,
+				A86341031E1ADC8800578253 /* PracticeViewController.swift */,
 				A8571F121DEFA7EB0019F7A3 /* TestViewController.swift */,
 				A869D5661DF0C79000443E45 /* ResultsViewController.swift */,
 				A869D5621DF0BEF600443E45 /* RestingHRViewController.swift */,
+				A8123A191E0B215200704D72 /* TakePulseViewController.swift */,
 				A869D55E1DF0A2F300443E45 /* StartViewController.swift */,
+				A8A09A3F1E1C841800651600 /* GetReadyHRViewController.swift */,
 				A869D5601DF0B16300443E45 /* PostHRViewController.swift */,
 				A869D5641DF0C50C00443E45 /* RPEViewController.swift */,
 				A869D5681DF0CA0100443E45 /* DistanceViewController.swift */,
@@ -572,6 +581,7 @@
 				A8DA01791E0A3D0000EC7967 /* ProfileViewController.swift in Sources */,
 				A869D5631DF0BEF600443E45 /* RestingHRViewController.swift in Sources */,
 				A869D5691DF0CA0100443E45 /* DistanceViewController.swift in Sources */,
+				A8A09A401E1C841800651600 /* GetReadyHRViewController.swift in Sources */,
 				A8DA017D1E0A405000EC7967 /* HistoryViewController.swift in Sources */,
 				A859459C1DC5307400797F5F /* HomeViewController.swift in Sources */,
 				A85076FB1DC8F86E006A8096 /* MenuTableViewController.swift in Sources */,
@@ -579,7 +589,9 @@
 				A869D5611DF0B16300443E45 /* PostHRViewController.swift in Sources */,
 				A859459A1DC5307400797F5F /* AppDelegate.swift in Sources */,
 				A8DA01811E0A474C00EC7967 /* OriginalPaperViewController.swift in Sources */,
+				A86341041E1ADC8800578253 /* PracticeViewController.swift in Sources */,
 				A8571F131DEFA7EB0019F7A3 /* TestViewController.swift in Sources */,
+				A8123A1A1E0B215200704D72 /* TakePulseViewController.swift in Sources */,
 				A8176B801DF8C1D9000BD288 /* LoginViewController.swift in Sources */,
 				A85076F91DC8F3FC006A8096 /* SWRevealViewController.m in Sources */,
 			);

@@ -45,7 +45,9 @@ class ResultsViewController: UIViewController {
     VO2 peak (L/min) = 0.74 + 0.31(classification) + 0.003(distance covered) – 0.15(RPE), r2 = 0.73, SEE = 0.48
     L/min.
     80 pushes/min
-    VO2 peak (L/min) = 1.50 + 0.0029(distance covered) - 0.16(RPE) + 0.235(classification), r2 = 0.74, SEE = 0.44
+    VO2 peak (L/min) = 1.50[beta / constant] + 0.0029(distance covered meters) - 0.16(RPE) + 0.235(classification)
+     
+     don't worry about for now:  r2 = 0.74, SEE = 0.44
     L/min.
     */
     

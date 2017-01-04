@@ -11,8 +11,12 @@ import UIKit
 class TestViewController: UIViewController {
     
     @IBOutlet weak var openMenuButton: UIBarButtonItem!
+    
     @IBAction func goToTestButtonPressed(_ sender: UIButton) {
         performSegue(withIdentifier: "RestingHR", sender: self)
+    }
+    @IBAction func practiceButtonPressed(_ sender: UIButton) {
+        performSegue(withIdentifier: "Practice", sender: self)
     }
 
     override func viewDidLoad() {

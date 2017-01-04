@@ -11,6 +11,7 @@ import UIKit
 class RestingHRViewController: UIViewController {
     
     var restingHR = String()
+    var numberOfBeats = String()
     
     @IBOutlet weak var restingHRTextField: UITextField!
     @IBOutlet weak var bottomConstraintForMainStackView: NSLayoutConstraint!
@@ -18,10 +19,14 @@ class RestingHRViewController: UIViewController {
     @IBAction func textFieldPrimaryActionTriggered(_ sender: Any) {
         textFieldSubmissionTriggered()
     }
-    @IBAction func submitHeartRateButtonPressed(_ sender: UIButton) {
+    @IBAction func submitButtonPressed(_ sender: Any) {
         textFieldSubmissionTriggered()
     }
 
+    @IBAction func takePulseButtonPressed(_ sender: Any) {
+        performSegue(withIdentifier: "TakePulse", sender: self)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         NotificationCenter.default.addObserver(self, selector: #selector(self.keyboardNotification(notification:)), name: NSNotification.Name.UIKeyboardWillChangeFrame, object: nil)
@@ -32,6 +37,8 @@ class RestingHRViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+
     
 
     // MARK: - Keyboard - second answer:  http://stackoverflow.com/questions/25693130/move-textfield-when-keyboard-appears-swift?rq=1
@@ -69,8 +76,13 @@ class RestingHRViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
-        let destination = segue.destination as! StartViewController
-        destination.restingHR = restingHR
+        if segue.identifier == "Start" {
+            let destination = segue.destination as! StartViewController
+            destination.restingHR = restingHR
+        } else {
+            print("pulse taken")
+        }
+
     }
 
 }

@@ -14,6 +14,15 @@ class ProfileViewController: FormViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        // FOR SWREVEAL MENU:
+        if self.revealViewController() != nil {
+            openMenuButton.target = self.revealViewController()
+            openMenuButton.action = #selector(SWRevealViewController.revealToggle(_:))
+            self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
+        }
+        
+        // FOR FORM - EUREKA COCOAPOD
         form = Section("Demographics")
             <<< TextRow(){ row in
                 row.title = "First Name"
@@ -38,21 +47,16 @@ class ProfileViewController: FormViewController {
                 $0.value = Date(timeIntervalSinceReferenceDate: 0)
             }
         +++ Section("Choose Units")
-            <<< SwitchRow("switchRowTag"){
-                $0.title = "Metric"
+            <<< SwitchRow("SwitchRow") { row in      // initializer
+                row.title = "Metric"
+                }.onChange { row in
+                    row.title = (row.value ?? false) ? "Imperial" : "Metric"
+                    row.updateCell()
+//                }.cellSetup { cell, row in
+//                    cell.backgroundColor = .lightGray
+//                }.cellUpdate { cell, row in
+//                    cell.textLabel?.font = .italicSystemFont(ofSize: 18.0)
             }
-            <<< LabelRow(){
-                $0.hidden = Condition.function(["switchRowTag"], { form in
-                    return !((form.rowBy(tag: "switchRowTag") as? SwitchRow)?.value ?? false)
-                })
-                $0.title = "Units will be in metric"
-            }
-//            <<< LabelRow(){
-//                $0.hidden = Condition.function(["switchRowTag"], { form in
-//                    return !((form.rowBy(tag: "switchRowTag") as? SwitchRow)?.value ?? false)
-//                })
-//                $0.title = "Units will be in imperial"
-//            }
         +++ SelectableSection<ListCheckRow<String>>("Choose your Functional Level", selectionType: .singleSelection(enableDeselection: true))
     
             let functionalLevel = ["1", "1.5", "2", "2.5", "3", "3.5", "4", "4.5"]

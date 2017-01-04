@@ -22,6 +22,7 @@ class HomeViewController: UIViewController {
             openMenuButton.action = #selector(SWRevealViewController.revealToggle(_:))
             self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
         }
+        performSegue(withIdentifier: "Landing", sender: self)
     }
 
     // run this function on viewdidload to determine the exact names of fonts to use

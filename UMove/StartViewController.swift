@@ -137,7 +137,7 @@ class StartViewController: UIViewController {
             timerLabel.text = timerToMinutes(time: TimeInterval(timeTrackerCount))
             timerIsInTestMode = false
             timeLeftLabel.isHidden = false
-            timeLeftLabel.text = "TIME REMAINING: "
+            timeLeftLabel.text = "TIME REMAINING:"
         } else if metronomeTimerCount > 0 && timerIsInTestMode == false {
             metronomeTimerCount -= 1
             changeBackgroundColorToBeat()

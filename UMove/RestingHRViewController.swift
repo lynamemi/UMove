@@ -12,8 +12,11 @@ class RestingHRViewController: UIViewController {
     
     var restingHR = String()
     var numberOfBeats = String()
+    var timerCount = 15
+    var timer = Timer()
     
     @IBOutlet weak var restingHRTextField: UITextField!
+    @IBOutlet weak var enterRestingHRLabel: UILabel!
     @IBOutlet weak var bottomConstraintForMainStackView: NSLayoutConstraint!
     
     @IBAction func textFieldPrimaryActionTriggered(_ sender: Any) {
@@ -24,13 +27,40 @@ class RestingHRViewController: UIViewController {
     }
 
     @IBAction func takePulseButtonPressed(_ sender: Any) {
-        performSegue(withIdentifier: "TakePulse", sender: self)
+        //Show an alert that tells the user that the timer will be starting and they will be counting along with it.
+        timer.invalidate()
+        let alert = UIAlertController(title: "Find your pulse!", message: "When you press OK, the timer will start automatically. Count the beats of your pulse for the timer's duration", preferredStyle: .alert)
+        let okAction = UIAlertAction(title: "OK", style: .default) { (UIAlertAction) in
+            self.startTimer()
+        }
+        let cancelAction = UIAlertAction(title: "Cancel", style: UIAlertActionStyle.cancel, handler: nil)
+        alert.addAction(okAction)
+        alert.addAction(cancelAction)
+        self.present(alert, animated:true, completion: nil)
+    }
+    
+    func startTimer() {
+        self.timerCount = 15
+        self.enterRestingHRLabel.text = String(self.timerCount)
+        self.timer = Timer.scheduledTimer(withTimeInterval: 1.0, repeats: true, block: { (Timer) in
+            self.connectTimer()
+        })
+    }
+    
+    func connectTimer() {
+        if timerCount > 0 {
+            timerCount -= 1
+            enterRestingHRLabel.text = String(timerCount)
+        } else {
+            timer.invalidate()
+            enterRestingHRLabel.text = "Enter number of pulse beats counted, we'll do the rest"
+            enterRestingHRLabel.font = enterRestingHRLabel.font.withSize(24)
+        }
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         NotificationCenter.default.addObserver(self, selector: #selector(self.keyboardNotification(notification:)), name: NSNotification.Name.UIKeyboardWillChangeFrame, object: nil)
-        // Do any additional setup after loading the view.
     }
 
     override func didReceiveMemoryWarning() {

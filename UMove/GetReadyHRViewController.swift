@@ -16,15 +16,22 @@ class GetReadyHRViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        timer = Timer.scheduledTimer(withTimeInterval: 0.75, repeats: true, block: { (Timer) in
-            self.connectTimer()
-        })
+//        timer = Timer.scheduledTimer(withTimeInterval: 0.75, repeats: true, block: { (Timer) in
+//            self.connectTimer()
+//        })
         // Do any additional setup after loading the view.
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        timerCount = 5
+        timer = Timer.scheduledTimer(withTimeInterval: 1.0, repeats: true, block: { (Timer) in
+            self.connectTimer()
+        })
     }
     
     func connectTimer() {

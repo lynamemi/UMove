@@ -13,7 +13,13 @@ class PostHRViewController: UIViewController {
     var postHR = String()
     // DATA PASSED FROM OTHER CONTROLLERS
     var restingHR = String()
+    var timer = Timer()
+    var timerCount = 15
+    var numberOfBeats = String()
+    
+    // NEED TO USE NSUSERDEFAULTS TO CHANGE LABEL FROM TIMER TO TITLE, ETC.
 
+    @IBOutlet weak var timerOrTitleLabel: UILabel!
     @IBOutlet weak var postHRTextField: UITextField!
     @IBOutlet weak var bottomConstraintForMainStackView: NSLayoutConstraint!
     
@@ -23,9 +29,22 @@ class PostHRViewController: UIViewController {
     @IBAction func submitButtonPressed(_ sender: UIButton) {
         textFieldSubmission()
     }
+    @IBAction func retakePulseButtonPressed(_ sender: UIButton) {
+        timer.invalidate()
+        let alert = UIAlertController(title: "Find your pulse!", message: "When you press OK, the timer will restart automatically. Count the beats of your pulse for the timer's duration", preferredStyle: .alert)
+        let okAction = UIAlertAction(title: "OK", style: .default) { (UIAlertAction) in
+            self.startTimer()
+        }
+        let cancelAction = UIAlertAction(title: "Cancel", style: UIAlertActionStyle.cancel, handler: nil)
+        alert.addAction(okAction)
+        alert.addAction(cancelAction)
+        self.present(alert, animated:true, completion: nil)
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        // for timer:
+        startTimer()
         
         // for keyboard:
         NotificationCenter.default.addObserver(self, selector: #selector(self.keyboardNotification(notification:)), name: NSNotification.Name.UIKeyboardWillChangeFrame, object: nil)
@@ -34,6 +53,25 @@ class PostHRViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    func startTimer() {
+        self.timerCount = 15
+        self.timerOrTitleLabel.text = String(self.timerCount)
+        self.timer = Timer.scheduledTimer(withTimeInterval: 1.0, repeats: true, block: { (Timer) in
+            self.connectTimer()
+        })
+    }
+    
+    func connectTimer() {
+        if timerCount > 0 {
+            timerCount -= 1
+            timerOrTitleLabel.text = String(timerCount)
+        } else {
+            timer.invalidate()
+            timerOrTitleLabel.text = "Enter number of pulse beats counted, we'll do the rest"
+            timerOrTitleLabel.font = timerOrTitleLabel.font.withSize(24)
+        }
     }
 
 
@@ -64,7 +102,9 @@ class PostHRViewController: UIViewController {
     }
     
     func textFieldSubmission() {
-        postHR = postHRTextField.text!
+        if let newPostHR = Int(postHRTextField.text!){
+            postHR = String(newPostHR*4)
+        }
         performSegue(withIdentifier: "RPE", sender: self)
     }
     

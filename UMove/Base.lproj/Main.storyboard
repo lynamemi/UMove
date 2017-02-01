@@ -393,82 +393,6 @@
             </objects>
             <point key="canvasLocation" x="-343.19999999999999" y="1909.2953523238382"/>
         </scene>
-        <!--Take Pulse View Controller-->
-        <scene sceneID="TmY-HO-BeC">
-            <objects>
-                <viewController id="lI8-wK-7Nj" customClass="TakePulseViewController" customModule="UMove" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="ITs-VW-Ugn"/>
-                        <viewControllerLayoutGuide type="bottom" id="riL-4K-Fyu"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="5gw-4b-6Qy">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="4cN-r7-yD2">
-                                <rect key="frame" x="32" y="32" width="311" height="603"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="start the timer , take your pulse, and enter number of beats you counted while the timer was active in the field below" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fd9-A5-voy">
-                                        <rect key="frame" x="0.0" y="0.0" width="311" height="230"/>
-                                        <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="24"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="15" textAlignment="center" lineBreakMode="characterWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y1A-mC-Vka">
-                                        <rect key="frame" x="0.0" y="254" width="311" height="69.5"/>
-                                        <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="36"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="0" textAlignment="center" minimumFontSize="36" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="htM-FN-KR1">
-                                        <rect key="frame" x="0.0" y="347.5" width="311" height="42"/>
-                                        <color key="backgroundColor" red="0.83529411760000005" green="0.80392156859999997" blue="0.7725490196" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <nil key="textColor"/>
-                                        <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="36"/>
-                                        <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="continue" enablesReturnKeyAutomatically="YES"/>
-                                    </textField>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qjt-ic-TyS">
-                                        <rect key="frame" x="0.0" y="413.5" width="311" height="63.5"/>
-                                        <color key="backgroundColor" red="0.36862745099999999" green="0.0" blue="0.1137254902" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <fontDescription key="fontDescription" name="OpenSans-Semibold" family="Open Sans" pointSize="24"/>
-                                        <state key="normal" title="start timer">
-                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="startTimerButtonPressed:" destination="lI8-wK-7Nj" eventType="touchUpInside" id="ep2-U8-PdT"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Y5-sX-hgj">
-                                        <rect key="frame" x="0.0" y="501" width="311" height="102"/>
-                                        <color key="backgroundColor" red="0.36862745099999999" green="0.0" blue="0.1137254902" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <fontDescription key="fontDescription" name="OpenSans-Semibold" family="Open Sans" pointSize="24"/>
-                                        <state key="normal" title="submit">
-                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="submitButtonPressed:" destination="lI8-wK-7Nj" eventType="touchUpInside" id="FgL-tc-cZu"/>
-                                        </connections>
-                                    </button>
-                                </subviews>
-                            </stackView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstAttribute="bottom" secondItem="4cN-r7-yD2" secondAttribute="bottom" constant="32" id="4rH-9c-TDl"/>
-                            <constraint firstItem="4cN-r7-yD2" firstAttribute="leading" secondItem="5gw-4b-6Qy" secondAttribute="leading" constant="32" id="eUQ-kb-OyB"/>
-                            <constraint firstItem="4cN-r7-yD2" firstAttribute="top" secondItem="5gw-4b-6Qy" secondAttribute="top" constant="32" id="iel-w5-ipz"/>
-                            <constraint firstAttribute="trailing" secondItem="4cN-r7-yD2" secondAttribute="trailing" constant="32" id="kBm-tA-H7f"/>
-                        </constraints>
-                    </view>
-                    <connections>
-                        <outlet property="numberOfBeatsEntered" destination="htM-FN-KR1" id="FtH-ke-NzP"/>
-                        <outlet property="timerLabel" destination="y1A-mC-Vka" id="c6R-lV-Ozl"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="6fY-4o-DA2" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-1148" y="3533"/>
-        </scene>
         <!--RestingHR View Controller-->
         <scene sceneID="OCz-TP-TTE">
             <objects>
@@ -486,6 +410,9 @@
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ENTER RESTING HEART RATE" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oc4-KL-a9u">
                                         <rect key="frame" x="34" y="0.0" width="243.5" height="252"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="252" id="8b4-jL-UuP"/>
+                                        </constraints>
                                         <fontDescription key="fontDescription" name="OpenSans-Semibold" family="Open Sans" pointSize="42"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -544,11 +471,9 @@
                     </view>
                     <connections>
                         <outlet property="bottomConstraintForMainStackView" destination="AKI-V3-hvR" id="obo-ss-pI0"/>
+                        <outlet property="enterRestingHRLabel" destination="oc4-KL-a9u" id="DJW-Bf-skn"/>
                         <outlet property="restingHRTextField" destination="bNO-3h-3uE" id="O68-HP-lhG"/>
                         <segue destination="0Zo-5q-ebI" kind="show" identifier="Start" id="slF-j2-I3z"/>
-                        <segue destination="lI8-wK-7Nj" kind="popoverPresentation" identifier="TakePulse" popoverAnchorView="bsR-FP-2mB" id="v5O-dA-E6O">
-                            <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
-                        </segue>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="h8A-c2-G5d" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -574,7 +499,7 @@
                                         <rect key="frame" x="0.0" y="0.0" width="311" height="269.5"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" text="PUSH PLAY TO START" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="3" minimumFontSize="18" translatesAutoresizingMaskIntoConstraints="NO" id="g8S-tF-Pyv">
-                                                <rect key="frame" x="0.0" y="0.0" width="311" height="151"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="311" height="150.5"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="151" id="v4X-qG-LQ4"/>
                                                 </constraints>
@@ -583,7 +508,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pNf-k0-3iS">
-                                                <rect key="frame" x="0.0" y="151" width="311" height="18"/>
+                                                <rect key="frame" x="0.0" y="150.5" width="311" height="18"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="18" id="xMc-lL-tqp"/>
                                                 </constraints>
@@ -592,7 +517,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" text="5" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" minimumFontSize="18" translatesAutoresizingMaskIntoConstraints="NO" id="OPx-vw-bya">
-                                                <rect key="frame" x="0.0" y="169" width="311" height="100.5"/>
+                                                <rect key="frame" x="0.0" y="168.5" width="311" height="101"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="100.5" id="e40-g8-8df"/>
                                                 </constraints>
@@ -664,20 +589,30 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GET READY TO TAKE YOUR PULSE" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AEz-ts-sWA">
-                                <rect key="frame" x="58" y="305.5" width="258" height="57.5"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="258" id="mT8-UB-90p"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="OpenSans-Semibold" family="Open Sans" pointSize="42"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="29k-5u-5dt">
+                                <rect key="frame" x="32" y="80" width="311" height="555"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FIND YOUR PULSE!" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AEz-ts-sWA">
+                                        <rect key="frame" x="0.0" y="0.0" width="311" height="228.5"/>
+                                        <fontDescription key="fontDescription" name="OpenSans-Semibold" family="Open Sans" pointSize="42"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="On the next screen, the timer will start automatically. Count the beats of your pulse for the timer's duration." textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QBv-ps-61m">
+                                        <rect key="frame" x="0.0" y="228.5" width="311" height="326.5"/>
+                                        <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="24"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="AEz-ts-sWA" firstAttribute="centerX" secondItem="T2y-06-zlq" secondAttribute="centerX" id="96C-zK-qgy"/>
-                            <constraint firstItem="AEz-ts-sWA" firstAttribute="centerY" secondItem="T2y-06-zlq" secondAttribute="centerY" id="spF-8j-T6D"/>
+                            <constraint firstAttribute="bottom" secondItem="29k-5u-5dt" secondAttribute="bottom" constant="32" id="dHs-jF-BVM"/>
+                            <constraint firstAttribute="trailing" secondItem="29k-5u-5dt" secondAttribute="trailing" constant="32" id="fZT-2e-dN9"/>
+                            <constraint firstItem="29k-5u-5dt" firstAttribute="leading" secondItem="T2y-06-zlq" secondAttribute="leading" constant="32" id="gSp-Yy-gnM"/>
+                            <constraint firstItem="29k-5u-5dt" firstAttribute="top" secondItem="T2y-06-zlq" secondAttribute="top" constant="80" id="yNb-1o-w0z"/>
                         </constraints>
                     </view>
                     <connections>
@@ -686,7 +621,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7Rz-Sv-eFC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-775" y="4254"/>
+            <point key="canvasLocation" x="-1098" y="4254"/>
         </scene>
         <!--PostHR View Controller-->
         <scene sceneID="BuW-gH-1Yz">
@@ -703,8 +638,11 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="SS1-jg-F0t">
                                 <rect key="frame" x="32" y="80" width="311" height="555"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ENTER POST HEART RATE" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Dl-cZ-qH6">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" text="ENTER POST HEART RATE" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Dl-cZ-qH6">
                                         <rect key="frame" x="26.5" y="0.0" width="258" height="213.5"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="213.5" id="dxU-GR-q5A"/>
+                                        </constraints>
                                         <fontDescription key="fontDescription" name="OpenSans-Semibold" family="Open Sans" pointSize="42"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -737,9 +675,12 @@
                                                 <rect key="frame" x="0.0" y="243.5" width="311" height="98"/>
                                                 <color key="backgroundColor" red="0.36862745099999999" green="0.0" blue="0.1137254902" alpha="0.75" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <fontDescription key="fontDescription" name="OpenSans-Semibold" family="Open Sans" pointSize="24"/>
-                                                <state key="normal" title="take pulse">
+                                                <state key="normal" title="retake pulse">
                                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="retakePulseButtonPressed:" destination="qsa-fW-8Pi" eventType="touchUpInside" id="LOG-y0-yMn"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -761,12 +702,13 @@
                     <connections>
                         <outlet property="bottomConstraintForMainStackView" destination="5ee-Bw-K9a" id="9Jm-rA-w4H"/>
                         <outlet property="postHRTextField" destination="I8u-YW-sNz" id="GDI-4U-uOb"/>
+                        <outlet property="timerOrTitleLabel" destination="2Dl-cZ-qH6" id="3gM-JP-1CX"/>
                         <segue destination="Myh-UK-1cP" kind="show" identifier="RPE" id="B9j-hr-kPI"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="81P-YB-6GH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="122" y="4255"/>
+            <point key="canvasLocation" x="-343" y="4254"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="mUt-pE-Dyj">
@@ -1239,4 +1181,5 @@
         <segue reference="I6h-dn-aDi"/>
         <segue reference="cJn-bz-fOp"/>
     </inferredMetricsTieBreakers>
+    <color key="tintColor" red="0.36862745099999999" green="0.0" blue="0.1137254902" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
 </document>

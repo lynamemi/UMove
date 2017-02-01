@@ -794,38 +794,62 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="bA3-OO-rQi">
                                 <rect key="frame" x="32" y="80" width="311" height="555"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SELECT COURSE AND DISTANCE" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qc0-8P-5pR">
-                                        <rect key="frame" x="0.0" y="0.0" width="311" height="181.5"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ENTER NUMBER OF LAPS COMPLETED" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qc0-8P-5pR">
+                                        <rect key="frame" x="0.0" y="0.0" width="311" height="278"/>
                                         <fontDescription key="fontDescription" name="OpenSans-Semibold" family="Open Sans" pointSize="42"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="L2X-y7-WD1">
-                                        <rect key="frame" x="0.0" y="181.5" width="311" height="373.5"/>
+                                        <rect key="frame" x="0.0" y="278" width="311" height="277"/>
                                         <subviews>
-                                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3c3-0X-APg">
-                                                <rect key="frame" x="0.0" y="0.0" width="311" height="228"/>
-                                                <color key="backgroundColor" red="0.83529411760000005" green="0.80392156859999997" blue="0.7725490196" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            </pickerView>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iTl-OA-PAy">
-                                                <rect key="frame" x="0.0" y="252" width="311" height="47.5"/>
-                                                <color key="backgroundColor" red="0.36862745099999999" green="0.0" blue="0.1137254902" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="COURSE" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RXh-Fl-Tr8">
+                                                <rect key="frame" x="0.0" y="0.0" width="311" height="40"/>
                                                 <fontDescription key="fontDescription" name="OpenSans-Semibold" family="Open Sans" pointSize="24"/>
-                                                <state key="normal" title="finish test">
-                                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                </state>
-                                                <connections>
-                                                    <action selector="finishButtonPressed:" destination="EMj-Yt-2oN" eventType="touchUpInside" id="5Fn-hY-lyy"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Iov-Pz-K3v">
-                                                <rect key="frame" x="0.0" y="323.5" width="311" height="50"/>
-                                                <color key="backgroundColor" red="0.36862745099999999" green="0.0" blue="0.1137254902" alpha="0.75" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <fontDescription key="fontDescription" name="OpenSans-Semibold" family="Open Sans" pointSize="24"/>
-                                                <state key="normal" title="add new course">
-                                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                </state>
-                                            </button>
+                                                <color key="textColor" red="0.36862745099999999" green="0.0" blue="0.1137254902" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="XCj-n9-IBM">
+                                                <rect key="frame" x="0.0" y="64" width="311" height="40.5"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H7b-bE-EZB">
+                                                        <rect key="frame" x="0.0" y="3.5" width="207" height="33"/>
+                                                        <fontDescription key="fontDescription" name="OpenSans-Semibold" family="Open Sans" pointSize="24"/>
+                                                        <color key="textColor" red="0.36862745099999999" green="0.0" blue="0.1137254902" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="99" stepValue="0.25" translatesAutoresizingMaskIntoConstraints="NO" id="pPc-fv-AVQ">
+                                                        <rect key="frame" x="217" y="5.5" width="94" height="29"/>
+                                                        <connections>
+                                                            <action selector="lapStepper:" destination="EMj-Yt-2oN" eventType="valueChanged" id="CrI-UL-Rd1"/>
+                                                        </connections>
+                                                    </stepper>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="0Vv-WA-GXg">
+                                                <rect key="frame" x="0.0" y="128.5" width="311" height="148.5"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iTl-OA-PAy">
+                                                        <rect key="frame" x="0.0" y="0.0" width="311" height="62"/>
+                                                        <color key="backgroundColor" red="0.36862745099999999" green="0.0" blue="0.1137254902" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <fontDescription key="fontDescription" name="OpenSans-Semibold" family="Open Sans" pointSize="24"/>
+                                                        <state key="normal" title="finish test">
+                                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="finishButtonPressed:" destination="EMj-Yt-2oN" eventType="touchUpInside" id="5Fn-hY-lyy"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Iov-Pz-K3v">
+                                                        <rect key="frame" x="0.0" y="86" width="311" height="62.5"/>
+                                                        <color key="backgroundColor" red="0.36862745099999999" green="0.0" blue="0.1137254902" alpha="0.75" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <fontDescription key="fontDescription" name="OpenSans-Semibold" family="Open Sans" pointSize="24"/>
+                                                        <state key="normal" title="add new course">
+                                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        </state>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
                                         </subviews>
                                     </stackView>
                                 </subviews>
@@ -840,7 +864,8 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="coursePickerView" destination="3c3-0X-APg" id="ONg-Zt-UYa"/>
+                        <outlet property="courseLabel" destination="RXh-Fl-Tr8" id="l16-95-n6F"/>
+                        <outlet property="lapStepperLabel" destination="H7b-bE-EZB" id="UKj-IQ-vfz"/>
                         <segue destination="XWS-Hr-w53" kind="custom" identifier="FinishTest" customClass="SWRevealViewControllerSeguePushController" id="cJn-bz-fOp"/>
                     </connections>
                 </viewController>

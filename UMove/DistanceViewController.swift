@@ -21,8 +21,12 @@ class DistanceViewController: UIViewController, UIPickerViewDataSource, UIPicker
     var postHR = String()
     var RPE = String()
     
-    @IBOutlet weak var coursePickerView: UIPickerView!
-    
+    // COURSE LABEL SHOULD BE A USER DEFAULT
+    @IBOutlet weak var courseLabel: UILabel!
+    @IBOutlet weak var lapStepperLabel: UILabel!
+    @IBAction func lapStepper(_ sender: UIStepper) {
+        lapStepperLabel.text = String(sender.value)
+    }
     @IBAction func finishButtonPressed(_ sender: UIButton) {
         performSegue(withIdentifier: "FinishTest", sender: self)
     }
@@ -30,11 +34,8 @@ class DistanceViewController: UIViewController, UIPickerViewDataSource, UIPicker
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        coursePickerView.dataSource = self
-        coursePickerView.delegate = self
         screenWidth = Double(screenSize.width) * 0.33
         print(restingHR, postHR, RPE)
-        // Do any additional setup after loading the view.
     }
 
     override func didReceiveMemoryWarning() {

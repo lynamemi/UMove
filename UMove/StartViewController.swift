@@ -135,6 +135,7 @@ class StartViewController: UIViewController {
             })
             metronomeTimerCount = 668
             timerLabel.text = timerToMinutes(time: TimeInterval(timeTrackerCount))
+            timerLabel.textAlignment = NSTextAlignment.center
             timerIsInTestMode = false
             timeLeftLabel.isHidden = false
             timeLeftLabel.text = "TIME REMAINING:"
